@@ -285,7 +285,7 @@ Then encryption at lower levels is neither needed nor wishable. <br/>
 Especially, sharing one passphrase with neighbours to allow them to join the wifi layer of the stack is counterproductive - and useless, since Cjdns will take care of encryption. <br/>
 You <em>don't definitively</em> want to have to share a passphrase for the wifi layer. If you don't, people can join the Janmesh without requiring additional configuration step and the range of the network will seamlessly extend. <br/>	
 <h3>Step 5 : share the home private network and the internet network from anduril to durandal</h3>
-NEED TO BE COMPLETED
+See the "<a href="./intermediate.php">Intermediate</a>" section of this site. 
 	
 <h3>Step 6 : configure a script to make the changes permanent</h3>
 Note : this method will use upstart, it's the default services management system in Ubuntu 14.04. (For the long term supported versions), systemd is the default services manager since Ubuntu 16.04, it's better to use it.</br>
@@ -304,6 +304,7 @@ case $1 in <br/>
 		
 	 stop)<br/>
 		/usr/bin/killall cjdroute;
+		/usr/bin/nmcli conn down id janmesh;
 		/usr/bin/killall olsrd;;<br/>
 		
 esac
