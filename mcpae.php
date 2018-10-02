@@ -113,7 +113,7 @@ Example: <br/>
 <br/>
 It is mostly useful only for inter-instance communications<br/>
 <h3>The Store addresses</h3>
-Any MCPae instance has the ability to let publish new modules that extends MCPae functionnalities, and also, to republish any module that have been installed from another Store. <br/>
+Any MCPae instance has the ability to let publish new modules that extends MCPae functionnalities. <br/>
 <br/>The Store operates at administrator level, and only the administrator of an instance can install, uninstall, or activate/deactivate modules. <br/>
 <br/>One of the first things you may want to do with a newly installed MCPae instance is to reach a Store to install new modules. <br/>
 <br/>For this you will need to know its address, which is of the form: <br/>
