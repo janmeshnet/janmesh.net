@@ -52,7 +52,7 @@ Make sure you read <a href="./index-main.php">beginner</a> documentation to know
 <strong>Voodoo computing warning</strong>
 The author of this tutorial achieved to make things work but does not fully understand how or why. Use at your own risk. <hr/>
 Basics<br/>
-We got two Janmesh nodes, connected together through CoOoOw mesh-local wifi. Both got the /etc/init.d/janmesh script installled. If you're not sure to know what this mean, please refer to the <a href="index-main.php">>beginner's</a> tutorials. 
+We got two Janmesh nodes, connected together through CoOoOw mesh-local wifi. Both got the /etc/init.d/janmesh script installled. If you're not sure to know what this mean, please refer to the <a href="index-main.php">beginner's</a> tutorials. 
 <br/>
 One station is the "client", whishing to have internet access. The other station has internet access through Ethernet (eth0) and whishes to share this access with the client.<br/>
 The first thing to edit is the two /etc/cjdroute.conf files on each computer. <br/>
