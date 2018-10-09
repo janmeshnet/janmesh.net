@@ -107,7 +107,7 @@ case $1 in
          stop)
                 /usr/bin/killall cjdroute;
                 /usr/bin/killall olsrd;;
-	/usr/bin/nmcli conn down janmesh;;
+		/usr/bin/nmcli conn down janmesh;;
 esac
 </pre>
 <strong>NOTE THE TRAILING ":1" </strong>on the line <code>ip -6 route add dev eth0 1111:1111:1111:1111:1111:1111:1;</code></strong>
@@ -126,7 +126,7 @@ case $1 in
          stop)
                 /usr/bin/killall cjdroute;
                 /usr/bin/killall olsrd;
-	/usr/bin/nmcli conn down janmesh;
+		/usr/bin/nmcli conn down janmesh;
 esac
 </pre>
 <h3>DNS configuration</h3>
