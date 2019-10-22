@@ -53,19 +53,19 @@ This tutorial has beeen updated and now is adapted to use with Ubuntu 18.04.
 <h3>Objectives of this tutorial</h3>
 The point of this tutorial is to inter-connect computers throught a  wifi network, and to add a olsrd routing, plus an encryption and authentication layer with cjdns. It will make these machines a part of the Janmesh meshlocal.
 <br/>
-<h4>The adressing</h4>
-We will use link-local adresses. It's sufficient for the scale of most urban areas, because this methode allows about 65000 adresses, and most of the time one household will only need one adress.
+<h4>The addressing</h4>
+We will use link-local addresses. It's sufficient for the scale of most urban areas, because this methode allows about 65000 addresses, and most of the time one household will only need one address.
 <br/>
-As a matter of fact inter-connecting different network segments will need two dedicated interfaces, for example to operate long-range liaison, connecting two network segments with each theirs 65 000 available adresses.<br/>
+As a matter of fact inter-connecting different network segments will need two dedicated interfaces, for example to operate long-range liaison, connecting two network segments with each their 65 000 available addresses.<br/>
 <h5>On the scale of a city</h5>
 On the scale of a big city, it would be more complicated : we can cut the network into segments by neighbourhood or district, and every segment must have its own essid because the wifi coverage of the segments will be overlapping each other.
 <br/>
 For example : append "Lyon 1er", "Lyon 2eme", "Lyon 3eme" to the essid for the areas of the city of Lyon.<br/>
-Remenber that the wifi network is just a layer, and Janmesh acually uses cjdns, wich is a higher layer protocol, that uses the wider range of adresses of the IPV6 protocol to route packets between machines.<br/> 
+Remenber that the wifi network is just a layer, and Janmesh acually uses cjdns, wich is a higher layer protocol, that uses the wider range of addresses of the IPV6 protocol to route packets between machines.<br/> 
 <h3>Step 0 : install required software</h3>
 For each computer enter the command line (need an internet access) : 
 <code>$ sudo apt-get install olsrd ufw</code><br/>
-This will install the olsrd dynamic routing and the firewall manager gufw.
+This will install the olsrd dynamic routing and the firewall manager ufw.
 	
 <h3>Step 1 : Mesh setup</h3>
 
@@ -89,7 +89,7 @@ Interface "wlan0" {<br/>
 	Ip4Broadcast 255.255.255.255<br/>
 }
 </code>
-(The name of your wifi interface will probably be "wlan0", but it can be different. For example on durandal it is called wlan5. You can use iwconfig to know the name of your wifi interface if you're not sur of its name (should be wlan-something).<br/>
+(The name of your wifi interface will probably be "wlan0", but it can be different. For example on our lab-testing machine "durandal" it was called wlan5. You can use iwconfig to know the name of your wifi interface if you're not sur of its name (should be wlan-something)).<br/>
 Then launch the olsrd daemon in background : <br/>
 <code>
 $ sudo olsrd
@@ -156,6 +156,12 @@ case $1 in <br/>
 esac
 </pre>
 save and close.<br/>
+
+In Ubuntu 16.04 and newer: you have to make the script executable : 
+<br/>
+<code>$ sudo chmod +x /etc/init.d/janmesh</code><br/>
+<br/>
+
 You can now start or stop the janmesh connexion with :
 <code>
 $ sudo /etc/init.d/janmesh start
@@ -164,10 +170,6 @@ and
 <code>
 $ sudo /etc/init.d/janmesh stop
 </code>
-<br/>
-In Ubuntu 16.04 and newer: you have to make the script executable : 
-<br/>
-$ sudo chmod +x /etc/init.d/janmesh<br/>
 <br/>
 
 

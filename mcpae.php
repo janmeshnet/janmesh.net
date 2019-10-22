@@ -44,7 +44,7 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 <a href="./">Home</a> > Documentation > MCPae	
 <h1>MCPae for Janmesh - Documentation</h1>
 <h2>MCPae - Introduction</h2>
-MCPae is a web application meant to run over a <em>cjdns</em> virtual, secure network. <strong>It is not intended to be used on an Internet server</strong> since it relies entirely on cjdns to provide security and privacy. <br/>
+MCPae is a PHP (no db) web application meant to run over a <em>cjdns</em> virtual, secure network. <strong>It is not intended to be used on an Internet server</strong> since it relies entirely on cjdns to provide security and privacy. <br/>
 It is developed as a part of the Janmesh project, a citizen-to-citizen networking initiative providing help to set up an alternative communication mean, resistant to severly disruptive conditions. <br/>
 <br/>The Janmesh project focuses on neighbour-to-neighbour links (a.k.a Joint Access Mesh Networking) using a CoOoOw network stack (cjdns over olsrd over open wifi). <br/>
 To learn more about all this, and before continuing to read about MCPae, please refer to the root of this site, <a href="./">http://janmesh.net</a> to make sure you will understand what is all this about. <br/>
@@ -77,8 +77,16 @@ Once logged in into your Janmesh box you'll have to:<br/>
 <code>
 $ git clone &lt;<em>Address not available for now, please check back in some dozens of weeks</em>&gt;
 </code>
-Create a directory in your public www dir. This directory will be refered as <em>the mountpoint</em> ; you can run several instances of MCPae on different mountpoints using the same HTTP server. <br/>
-Copy the MCPae code there. <br/><br/>
+Create, as root, a subdirectory in your public www dir, which would be typically something like 
+
+<code># mkdir /var/www/html/mountpoint</code>
+
+This directory will be refered as <em>the mountpoint</em> ; you can run several instances of MCPae on different mountpoints using the same HTTP server. <br/>
+Copy the MCPae code there. 
+<code># cp -R mcpae-janmesh/www-root/* /var/www/html/mountpoint</code>
+<br/><br/>
+
+
 Change the owner of the mountpoint directory to www-data with the command chown -R<br/>
 Check with your web browser the address <strong>http://localhost/(mountpoint)</strong>
 <br/>
@@ -103,7 +111,7 @@ If you want to allow a listening web server (port 80) and block anything else, f
 as root: <br/>
 <code>
 # ufw deny in on tun0<br/>
-# sudo ufw allow in on tun0 to any port 80<br/>
+# ufw allow in on tun0 to any port 80<br/>
 </code>
 <h2>The basics of MCPae concepts: the addresses</h2>
 The smallest unit for the purpose of running MCPae is the <em>instance identifier</em> built out of the IPv6 address of the instance followed by a double slash folowed by the mountpoint. 
@@ -112,6 +120,24 @@ Example: <br/>
 <code>1234:5678:91ab:cdef:fedc:ba19:8765:4321//mymountpoint</code>
 <br/>
 It is mostly useful only for inter-instance communications<br/>
+<h3>MCPae communications</h3>
+All MCPae's components and module communication is handled trough HTTP APIs. 
+<h4>Inter instances communications</h4>
+These, are connections etablished by the core MCPae software between distincts MCPae instances. 
+They are using cjnds network and the MCPae addresses as defined above. 
+
+It is donne by opening an HTTP connexion at the url with two to three GET parameters :
+-A meta parameter specifiying that the nature of the message is inter-instances communication
+-An action parameter specifiying which command as to be executed by the API
+-An array of optional arguments
+
+Typical usages: ping, handshake...
+
+
+<h4>Communication between MCPae and its modules</h4>
+Render module's graphical UI
+<h4>Communication between local modules</h4>
+<h4>Communication between distant modules</h4>
 <h3>The Store addresses</h3>
 Any MCPae instance has the ability to let publish new modules that extends MCPae functionnalities. <br/>
 <br/>The Store operates at administrator level, and only the administrator of an instance can install, uninstall, or activate/deactivate modules. <br/>

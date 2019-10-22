@@ -55,7 +55,7 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 A full documentation to get a working CoOoOW stack with basic Ubuntu GNU/Linux computers is available. The network is up and runing at a local scale<br>
 <h2>Documentation and tutorials</h2>
 <h3>Beginner</h3>
-Read how to, using wifi links and a CoOoOw stack, from scratch, setuo the mesh network. Then, learn more about firefalls to secure (network) access to your devices.  <a href="index-main.php">-Read more-</a>.
+Read how to, using wifi links and a CoOoOw stack, from scratch, setup the mesh network. Then, learn more about firefalls to secure (network) access to your devices.  <a href="index-main.php">-Read more-</a>.
 <br/>
 <h3>Intermediate</h3>
 Lear how to use one machine that operate Janmesh over Wifi and that is connected to Internet through Ethernet to act as a gateway and NAT box in order to allow other devices with (meshing) wifi only to share its Internet access.  <a href="intermediate.php">-Read more -</a>
@@ -73,7 +73,7 @@ In short, you don't have to wait. If you have physical or remote access to your 
 <h3>Is Janmesh using only radio link? Can I use some other kind of networking medium? </h3>
 You can use any networking medium to setup and operate your CoOoOw stacks. You can use an ethernet cable to connect with a close neighbour, as well as associated BPL interfaces to connect with other homes using the same electrical power transformator than you (typically, your block and nearest ones). 
 <h3>Why Janmesh? Why spend your sweat and energy to propel the whole project?</h3>
-I (<em>Shangri-l</em>) am not sure. I'm having fun with experimenting neigbourhood networking since the early 2000's. I just cannot prevent myself to stop. I was hoping my close neighbours would read all this and mesh with me, to aae share files or text messages or build whatever useful. This hasn't happened yet. That's the bad side of network effect. But if a few people start to join Janmesh, it will become more attractive, and the more people will use it, the more people will use it. That's the good side of network effect. 
+I (<em>Shangri-l</em>) am not sure. I'm having fun with experimenting neighbourhood networking since the early 2000's. I just cannot prevent myself to stop. I was hoping my close neighbours would read all this and mesh with me, to aae share files or text messages or build whatever useful. This hasn't happened yet. That's the bad side of network effect. But if a few people start to join Janmesh, it will become more attractive, and the more people will use it, the more people will use it. That's the good side of network effect. 
 <h1>Donate</h1>
 <?php include ('../bank/index.php'); ?>
 </body>
