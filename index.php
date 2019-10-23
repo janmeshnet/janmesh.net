@@ -47,11 +47,30 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 <h1>Janmesh.net</h1>
 <h3>Joint Access Mesh Networks</h3>
 </span>
-<h2>What is Janmesh? What is a Janmesh box? </h2>
+<div style="background-color:blue;color:white;border: solid black 3px;border-radius:8px;">
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="./">Home</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="#intro">Intro</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="#doc">Doc</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="#javica">Javica</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="#faq">FAQ</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="./hardware-certification">Certification&nbsp;program</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="./compat">Certified&nbsp;compatible&nbsp;products</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="#about">About&nbsp;us</a>
+<a style="border:solid yellow 3px; border-radius:12px;color:white;padding:3px" href="#donate">Donate</a>
+
+
+
+
+
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_MnRuR5HeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr/><em style="font-size:80%;">This YouTube video uses cookies, if you don't change your cookie settings. </em>
+<a name="intro"><h2>What is Janmesh? What is a Janmesh box? </h2></a>
 <strong>Janmesh</strong> (SSID http://janmesh.net) is a citizen-to-citizen networking initiative, running nodes with an active <strong>CoOoOW</strong> stack (<em>cjdns</em> over <em>OLSRD</em> over open WiFi), that provide an alternative communication medium resistant to severely disruptive situations. <br/>
 <strong>A Janmesh box</strong> is a computing device (typically an unexpensive SoC/SbC computing device, or an old laptop) running as a Janmesh network node, connected to neighbourhood's nodes, and serving mesh connectivity and services toward the home LAN network<br/>
 <div style="float;right;">
-<h2>How is the Janmesh Project doing?</h2>
+	
+<a name="doc"><h2>How is the Janmesh Project doing?</h2></a>
 A full documentation to get a working CoOoOW stack with basic Ubuntu GNU/Linux computers is available. The network is up and runing at a local scale<br>
 <h2>Documentation and tutorials</h2>
 <h3>Beginner</h3>
@@ -60,10 +79,12 @@ Read how to, using wifi links and a CoOoOw stack, from scratch, setup the mesh n
 <h3>Intermediate</h3>
 Lear how to use one machine that operate Janmesh over Wifi and that is connected to Internet through Ethernet to act as a gateway and NAT box in order to allow other devices with (meshing) wifi only to share its Internet access.  <a href="intermediate.php">-Read more -</a>
 <h3>MCPae</h3>
-The software that is meant to be run on meshboxes, developed by the Janmesh Project, is called MCPae. It is not available for download for now, but there is <a href="./mcpae.php">some documentation about it</a>. 
+This Swiss army knife software, that is meant to be run on meshboxes, developed by the Janmesh Project, is called MCPae. It is not available for download for now, but there is <a href="./mcpae.php">some documentation about it</a>. 
+<a name="javica"><h3>Javica</h3></a>
+Javica (Janmesh Video Call) is a video chat software. Currently in design phase, the sole ressource available is <a href="https://github.com/janmeshnet/javica">the code repo</a>. 
 <hr/>
 </div>
-<h2 style="clear:both;">And now learn more about citizen-to-citizen networking future...</h2>
+<a name="faq"><h2 style="clear:both;">And now learn more about citizen-to-citizen networking future...</h2></a>
 <em>The connectivity to the mesh network can ben tunneled through a long-range directionnal radio link to connect distant communities</em><br/>
 <strong>Or tunneled over Internet -or any other network medium- to rely distant places of the world</strong><br/>
 <a href="index-main.php">Get started</a> or read more:
@@ -72,9 +93,10 @@ The software that is meant to be run on meshboxes, developed by the Janmesh Proj
 In short, you don't have to wait. If you have physical or remote access to your Janmesh node station, you can just use out-of-the-box any network services such as SCP, HTTP or SFTP/FTP file transfer or just any other common protocol, with the requirement that you'll have to know the IPv6 adress of the machine you'll want to talk to, and that the protocol supports IPv6 adressing (some protocols require hostnames and are then not suitable). 
 <h3>Is Janmesh using only radio link? Can I use some other kind of networking medium? </h3>
 You can use any networking medium to setup and operate your CoOoOw stacks. You can use an ethernet cable to connect with a close neighbour, as well as associated BPL interfaces to connect with other homes using the same electrical power transformator than you (typically, your block and nearest ones). 
-<h3>Why Janmesh? Why spend your sweat and energy to propel the whole project?</h3>
+<a name="about"><h3>Why Janmesh? Why spend your sweat and energy to propel the whole project?</h3></a>
 I (<em>Shangri-l</em>) am not sure. I'm having fun with experimenting neighbourhood networking since the early 2000's. I just cannot prevent myself to stop. I was hoping my close neighbours would read all this and mesh with me, to aae share files or text messages or build whatever useful. This hasn't happened yet. That's the bad side of network effect. But if a few people start to join Janmesh, it will become more attractive, and the more people will use it, the more people will use it. That's the good side of network effect. 
-<h1>Donate</h1>
+<a name="donate"><h1>Donate</h1></a>
 <?php include ('../bank/index.php'); ?>
+<hr style="margin-top:100%;"/>
 </body>
 </html>
