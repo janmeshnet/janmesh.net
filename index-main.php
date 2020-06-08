@@ -188,8 +188,8 @@ $ sudo ufw deny in on tun0 to any port 80
 <h3>Whitelisting only wished open services and blocking anything else</h3>
 A much more secure approach is to block anything and allow only what is useful. Example if you want to allow a listening web server (port 80) and block anything else, for a mesh network operating on the tun0 interface:
 <code>
-$ sudo ufw deny in on tun0<br/>
 $ sudo ufw allow in on tun0 to any port 80<br/>
+$ sudo ufw deny in on tun0<br/>
 </code>
 </div>
 
