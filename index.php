@@ -68,24 +68,28 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 	<h2>What it does: </h2>
 	It's a network layer deployed over both the internet, and both wifi mesh local networks, which grow and extend range as new station are joigning the mesh. It then provide a virtual network, and all the participant are just like if their where all on the same local lan. Accessing a machine at the other side of the town, or of the world, is as easy as access your home printer on your home lan.       
 	<h2>What are the benefits?</h2>
-	Such a network is highly resistant to censorship and to severely disruptive situation like disasters or civil wars, allowing to maintain citizen-operated newtworking service even if internet is down, and to still provide untakedownable, acentered/distributed system of internet-based communication tools and various services. 
+	Such a network is highly resistant to censorship and to severely disruptive situation like disasters or civil wars, allowing to maintain citizen-operated networking service even if internet is down, and to still provide untakedownable, acentered/distributed system of internet-based communication tools and various services. 
 	<h2>Janmesh box</h2>
-A <strong><em>Janmesh box</em></strong> is a device that operates the mesh wifi network and that is plugged into your home lan internet box. It can instantly start peering with a neighbour at wifi range, immediately connect any cjdns-enabled home lan machine to the join acces mesh network, and is likely to provide, or can be easily set to provide, a public internet-tunneled peering with a public peering server, unifiying then networks at the whole world level. 
+A <strong><em>Janmesh box</em></strong> is a device that operates the mesh wifi network and that is plugged into your home lan internet box. It can instantly start peering with a neighbour at wifi range, immediately connect any cjdns-enabled home lan machine to the join acces mesh network, and is likely to provide, or can be easily set to provide, an internet-tunneled peering with a public peering server, unifiying then networks at the whole world level. 
 <br/>
-It is typically built from an old wifi modem-router, a cheap SystemOnChip xtra small form computing device, or even an old laptop or simply any computer with at least one available extra wifi interface. 
+It is typically built from an old wifi modem-router, or an unexpensive SystemOnChip xtra small form factore computing device, or even an old laptop or simply any computer with at least one available extra wifi interface. 
 
 <a name="doc"><h2>How is the Janmesh Project doing?</h2></a>
 A full documentation to get a working CoOoOW stack with basic Ubuntu GNU/Linux computers is available. The network is up and runing at a local scale<br>
 <h2>Documentation and tutorials</h2>
-<h3>Setup Janmesh</h3>
+<h3>Janmesh Box (using an old modem/router)</h3>
+Learn how to flash an old modem/router with OpenWRT and turn it into <a href="./router.php">a wifi repeater and ethernet autopeerer for Janmesh/CoOoOw (Janmesh V1) networks</a><hr/>
+
+
+<h3>Janmesh box (using an Ubuntu Linux device or computer)</h3>
 Read how to, using wifi links and a CoOoOw stack, from scratch, setup the mesh network. Then, learn more about firefalls to secure (network) access to your devices.  <a href="index-main.php">-Read more-</a>.
 <br/>
-<h3>Internet sharing</h3>
+<h3>Internet sharing (between two Linux/UNIX devices or other OSes with adaptations)</h3>
 Lear how to use one machine that operate Janmesh over Wifi and that is connected to Internet through Ethernet to act as a gateway and NAT box in order to allow other devices with (meshing) wifi only to share its Internet access.  <a href="intermediate.php">-Read more -</a>
+<a name="ocsad"><h3>Ocsad</h3></a>
+Ocsad (Open cjdns services announcement and discovery) is a GUI cross-platform services discovery and announcement tool, allowing to publicly get your open-to-use services you made available on your machine listed and discoverable by other users, and allowing you to discover, manage, at access services from your favorite people. Currently in "planned" stage, you can <a href="https://github.com/janmeshnet/janmesh.net">participate</a> to the design proposals and discover them <a href="./ocsad">on the Ocsad page</a>. 
 <a name="javica"><h3>Javica</h3></a>
 Javica is a php web application aimed at run on a network of http servers. It provides a basic framework to allow developpers to setup more complex operation involving known "contacts" and the cjdns network. <a href="https://github.com/janmeshnet/javica">Code repo</a>. 
-<h3>Router</h3>
-Learn how to flash an old modem/router with OpenWRT and turn it into <a href="./router.php">a wifi repeater and ethernet autopeerer for Janmesh/CoOoOw (Janmesh V1) networks</a><hr/>
 </div>
 <a name="faq"><h2 style="clear:both;">And now learn more about citizen-to-citizen networking future...</h2></a>
 <hr/>
