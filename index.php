@@ -78,15 +78,15 @@ It is typically built from an old wifi modem-router, or an unexpensive SystemOnC
 A full documentation to get a working CoOoOW stack with basic Ubuntu GNU/Linux computers is available. The network is up and runing at a local scale<br>
 <h2>Documentation and tutorials</h2>
 <h3>Janmesh Box (using an old modem/router)</h3>
-Learn how to flash an old modem/router with OpenWRT and turn it into <a href="./router.php">a wifi repeater and ethernet autopeerer for Janmesh/CoOoOw (Janmesh V1) networks</a><hr/>
+Learn how to flash an old modem/router with OpenWRT and turn it into <a href="./router.php">a mesh wifi CoOoOw station, wifi network client and range extender, and local-lan ethernet autopeerer for Janmesh/CoOoOw (Janmesh V1) networks</a><hr/>
 
 
 <h3>Janmesh box (using an Ubuntu Linux device or computer)</h3>
 Read how to, using wifi links and a CoOoOw stack, from scratch, setup the mesh network. Then, learn more about firefalls to secure (network) access to your devices.  <a href="index-main.php">-Read more-</a>.
-<br/>
+<hr/><br/>
 <h3>Internet sharing (between two Linux/UNIX devices or other OSes with adaptations)</h3>
 Lear how to use one machine that operate Janmesh over Wifi and that is connected to Internet through Ethernet to act as a gateway and NAT box in order to allow other devices with (meshing) wifi only to share its Internet access.  <a href="intermediate.php">-Read more -</a>
-<a name="ocsad"><h3>Ocsad</h3></a>
+<hr/><a name="ocsad"><h3>Ocsad</h3></a>
 Ocsad (Open cjdns services announcement and discovery) is a GUI cross-platform services discovery and announcement tool, allowing to publicly get your open-to-use services you made available on your machine listed and discoverable by other users, and allowing you to discover, manage, at access services from your favorite people. Currently in "planned" stage, you can <a href="https://github.com/janmeshnet/janmesh.net">participate</a> to the design proposals and discover them <a href="./ocsad">on the Ocsad page</a>. 
 <a name="javica"><h3>Javica</h3></a>
 Javica is a php web application aimed at run on a network of http servers. It provides a basic framework to allow developpers to setup more complex operation involving known "contacts" and the cjdns network. <a href="https://github.com/janmeshnet/javica">Code repo</a>. 
