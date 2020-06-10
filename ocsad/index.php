@@ -87,7 +87,7 @@ File: Quit<br/>
 Help : About<br/>
 <h2>Technical design</h2>
 
-Ocsad does not make uses of SQL databases and manages data storage by associative array serialization. The actual files on disk should be storing the smallest possible information unit each, and general code design should tend to load these units for a small duration only. 
+Ocsad does not make uses of SQL databases and manages data storage by Collections.OrderedDict serialization. The actual files on disk should be storing the smallest possible information unit each, and general code design should tend to load these units for a small duration only. 
 
 </body>
 
