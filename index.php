@@ -59,6 +59,7 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 
 
 </div>
+<h1 style="text-align=center;">Cell phones without carrier operators... An internet run and owned by citizen... Host your web service/application brick at home or on the go in your device and say goodbye to centralized intermediates... Is this feasable ? Sure !</h1>
 <a name="intro"><h2>What is Janmesh?</h2></a>
 <strong>Janmesh</strong> is a citizen-to-citizen networking initiative, that provides an alternative communication medium resistant to severely disruptive situations. <br/>
 <div style="float;right;">
@@ -69,6 +70,12 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 	It's a network layer deployed over both the internet, and both wifi mesh local networks, which grow and extend range as new station are joigning the mesh. It then provide a virtual network, and all the participant are just like if their where all on the same local lan. Accessing a machine at the other side of the town, or of the world, is as easy as access your home printer on your home lan.       
 	<h2>What are the benefits?</h2>
 	Such a network is highly resistant to censorship and to severely disruptive situation like disasters or civil wars, allowing to maintain citizen-operated networking service even if internet is down, and to still provide untakedownable, acentered/distributed system of internet-based communication tools and various services. 
+	<h2>What do we need ?</h2>
+	<ol><li>Linux/Unix-based computing units with ad-hoc wifi able to run olsrd and cjdns : <strong>As of 2020, they have been here for more than one decade</strong></li>
+	<li>Phones finally allowing ad-hoc wifi (typically Linux phones) and olrsd/cjdns : <strong>As of 2020, they are hitting the market</strong></li></ol>
+	
+<h2>Where are we now ? </h2>
+Althought running Janmesh on a phone is quite adventurous and may require tweaking, running Janmesh on a linux device or computer, from neighbour to neighbour, using wifi or whatever else, is quite easy. To sum up, land stations are absolutely ready, and mobile stations are already here at some point. 
 	<h2>Janmesh box</h2>
 A <strong><em>Janmesh box</em></strong> is a device that operates the mesh wifi network and that is plugged into your home lan internet box. It can instantly start peering with a neighbour at wifi range, immediately connect any cjdns-enabled home lan machine to the join acces mesh network, and is likely to provide, or can be easily set to provide, an internet-tunneled peering with a public peering server, unifiying then networks at the whole world level. 
 <br/>
@@ -86,11 +93,12 @@ Read how to, using wifi links and a CoOoOw stack, from scratch, setup the mesh n
 <hr/><br/>
 <h3>Internet sharing (between two Linux/UNIX devices or other OSes with adaptations)</h3>
 Lear how to use one machine that operate Janmesh over Wifi and that is connected to Internet through Ethernet to act as a gateway and NAT box in order to allow other devices with (meshing) wifi only to share its Internet access.  <a href="intermediate.php">-Read more -</a>
-<hr/><a name="ocsad"><h3>Ocsad</h3></a>
+<!--<hr/><a name="ocsad"><h3>Ocsad</h3></a>
 Ocsad (Open cjdns services announcement and discovery) is a GUI cross-platform services discovery and announcement tool, allowing to publicly get your open-to-use services you made available on your machine listed and discoverable by other users, and allowing you to discover, manage, at access services from your favorite people. Currently in "planned" stage, you can <a href="https://github.com/janmeshnet/janmesh.net">participate</a> to the design proposals and discover them <a href="./ocsad">on the Ocsad page</a>. 
 <a name="javica"><h3>Javica</h3></a>
 Javica is a php web application aimed at run on a network of http servers. It provides a basic framework to allow developpers to setup more complex operation involving known "contacts" and the cjdns network. <a href="https://github.com/janmeshnet/javica">Code repo</a>. 
-</div>
+</div>-->
+<hr/>
 <a name="faq"><h2 style="clear:both;">And now learn more about citizen-to-citizen networking future...</h2></a>
 <hr/>
 The base: <em>The connectivity to the mesh network can ben tunneled through a long-range directionnal radio link to connect distant communities</em><br/>
