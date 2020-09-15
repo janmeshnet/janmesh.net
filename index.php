@@ -67,7 +67,7 @@ if ($_SERVER['SERVER_NAME']!=='janmesh.net')
 	<h2>Janmesh...</h2>
 	The <em>Janmesh</em> network (SSID: http://janmesh.net ) uses a  <strong>CoOoOW</strong> stack (<em>cjdns</em> over <em>OLSRD</em> over open WiFi).
 	<h2>What it does: </h2>
-	It's a network layer deployed over both the internet, and both wifi mesh local networks, which grow and extend range as new station are joigning the mesh. It then provide a virtual network, and all the participant are just like if their where all on the same local lan. Accessing a machine at the other side of the town, or of the world, is as easy as access your home printer on your home lan.       
+	It's a network layer deployed over both the internet, and both wifi mesh local networks, which grows and extends range as new station are joigning the mesh. It then provide a virtual network, and all the participant are just like if their where all on the same local lan. Accessing a machine at the other side of the town, or of the world, is as easy as access your home printer on your home lan.       
 	<h2>What are the benefits?</h2>
 	Such a network is highly resistant to censorship and to severely disruptive situation like disasters or civil wars, allowing to maintain citizen-operated networking service even if internet is down, and to still provide untakedownable, acentered/distributed system of internet-based communication tools and various services. 
 	<h2>What do we need ?</h2>
