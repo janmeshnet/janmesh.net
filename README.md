@@ -2,6 +2,6 @@
 used to generate the janmesh.net website. Pull request to add more documentation. 
 
 
-Janmesh.net
+https://janmesh.net
 
 Joint Access Mesh Networks
